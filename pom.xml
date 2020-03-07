@@ -13,6 +13,7 @@
         <module>advanced</module>
         <module>redis</module>
         <module>spring</module>
+        <module>fundamental</module>
     </modules>
 
     <build>
