@@ -1,0 +1,22 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wsg.java.mybatis.mapper.UserMapper">
+    <insert id="insertUser" parameterType="wsg.java.mybatis.pojo.User">
+        INSERT example.user (username, age)
+        values (#{username}, #{age})
+    </insert>
+
+    <insert id="batchInsert">
+        INSERT INTO example.user (username, age)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.username}, #{item.age})
+        </foreach>
+    </insert>
+
+    <select id="selectUser" resultType="wsg.java.mybatis.pojo.User" parameterType="java.lang.String">
+        SELECT username, age
+        FROM user
+        WHERE username = #{username}
+    </select>
+</mapper>

@@ -32,8 +32,9 @@ hs_err_pid*
 *.iml
 out
 gen
-advanced/target/
-designpattern/target/
-fundamental/target/
-redis/target/
-spring/target/
+/advanced/target/
+/designpattern/target/
+/fundamental/target/
+/redis/target/
+/spring/target/
+/mybatis/target/
