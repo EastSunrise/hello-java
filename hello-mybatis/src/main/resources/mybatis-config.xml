@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--Refer to https://mybatis.org/mybatis-3/zh/configuration.html -->
+<configuration>
+    <!-- Custom properties from resources or elements. -->
+    <!-- Properties from resources will overwrite those from elements with the same name. -->
+    <environments default="development">
+        <environment id="development">
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+            <transactionManager type="JDBC"/>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+    </mappers>
+
+    <properties resource="mybatis-config.properties"/>
+</configuration>

@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>designpattern</module>
-        <module>advanced</module>
-        <module>redis</module>
-        <module>spring</module>
-        <module>fundamental</module>
-        <module>mybatis</module>
+        <module>hello-designpattern</module>
+        <module>hello-advanced</module>
+        <module>hello-redis</module>
+        <module>hello-spring</module>
+        <module>hello-fundamental</module>
+        <module>hello-mybatis</module>
     </modules>
 
     <dependencyManagement>
