@@ -1,0 +1,17 @@
+package cn.wsg.hello.designpattern.strategy.member;
+
+import cn.wsg.hello.designpattern.strategy.PriceStrategy;
+
+/**
+ * 中级会员
+ *
+ * @author wangsigen
+ * @date 2018-10-26 16:36
+ */
+public class IntermediateMember implements PriceStrategy {
+
+    @Override
+    public double calcPrice(double price) {
+        return price * 0.9;
+    }
+}
